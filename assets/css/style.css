@@ -1,14 +1,20 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200&display=swap');
+
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
-a{
+
+a {
     color: #fff;
     text-decoration: none;
 }
+
 /* Header Section Start */
-header{
+header {
     width: 100%;
     height: 55px;
     background: #0F1D38;
@@ -17,87 +23,102 @@ header{
     justify-content: space-between;
     padding: 0px 100px;
 }
-header ul img{
+
+header ul img {
     padding: 6px 0px 0px 5px;
 }
-header ul li{
+
+header ul li {
     display: inline-block;
     color: #fff;
     margin: 10px;
     font-weight: 600;
 }
-.active a{
+
+.active a {
     color: #fc2206;
 }
-.act a{
+
+.act a {
     color: #caf86f;
 }
-.multicolor-text{
-     font-family: cursive;
-     font-size: x-large;
-     background: linear-gradient(to right, #ef5350, #7e57c2, #43a047, #ff5722);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;   
+
+.multicolor-text {
+    font-family: cursive;
+    font-size: x-large;
+    background: linear-gradient(to right, #ef5350, #7e57c2, #43a047, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 /* /Header Section End */
 
 /* Banner Section Start */
-.banner{
+.banner {
     width: 100%;
     height: 500px;
-    background: url(../img/momondo.jpg); 
-    background-size:  100% 500px;
+    background: url(../img/momondo.jpg);
+    background-size: 100% 500px;
     position: relative;
     padding: 0px 160px;
 }
-.banner h1{
-     position: absolute;
-     top: 100px;
-     font-size: 50px;
-     font-family: 'Times New Roman', Times, serif; 
-     font-weight: lighter;  
+
+.banner h1 {
+    position: absolute;
+    top: 100px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
 }
-.banner h1 span{
+
+.banner h1 span {
     display: block;
 }
-.last{
+
+.last {
     position: absolute;
     font-weight: bold;
     font-size: xx-large;
 }
-.banner form{
-    background:#5b347a;
+
+.banner form {
+    background: #5b347a;
     position: absolute;
     bottom: 20px;
     height: 120px;
     display: flex;
-    width:67%;  
+    width: 67%;
 }
-.banner form .btn{
-    background:#F12F4B;
-    border:none;
-    color:#fff; 
-    margin-left: 15px; 
+
+.banner form .btn {
+    background: #F12F4B;
+    border: none;
+    color: #fff;
+    margin-left: 15px;
     width: 75px;
 }
-.banner button{
-    background:#4A356F;
-    border:none;
-    color:#fff;
-    font-size:10px;
-    padding:6px 6px;
+
+.banner button {
+    background: #4A356F;
+    border: none;
+    color: #fff;
+    font-size: 10px;
+    padding: 6px 6px;
     width: 8%;
 }
-.box label{
+
+.box label {
     display: none;
 }
+
 .banner form .box input,
-.banner form .box select{
+.banner form .box select {
     width: 170px;
     height: 30px;
     margin: 15px 0px 0px 3px;
 }
-.banner form .sbtn{
+
+.banner form .sbtn {
     background: #FF566A;
     font-size: large;
     width: 80px;
@@ -105,7 +126,8 @@ header ul li{
     border-radius: 50%;
     margin: 15px 15px 15px 15px;
 }
- .banner .box div{
+
+.banner .box div {
     display: flex;
     width: 70%;
     position: absolute;
@@ -113,148 +135,327 @@ header ul li{
     margin: 15px 3px 0px 5px;
     text-wrap: nowrap;
 }
-.banner .box div select{
+
+.banner .box div select {
     background: none;
     height: 20px;
     color: #fff;
     position: relative;
     margin: 0px 3px 0px 5px;
 }
-.banner .box div input{
+
+.banner .box div select option {
+    background: #5b347a;
+}
+
+.banner .box div input {
     width: 12px;
     height: 12px;
     margin: 2px 3px 0px 5px;
     background: none;
-} 
+}
+
 /* /Banner Section End */
 
 /* Fun Section Start*/
-     .fun{
-        background: linear-gradient(rgba(18, 18, 18, 0.7),rgba(14, 14, 14, 0.7)),
-                  url(../img/banner2.jpg);
-       width: 100%;
-       height: 300px;  
-       position: relative;   
-       background-size: cover;  
-       padding: 30px 160px;  
-     }
-     .fun h2{
-        color: #fff;  
-       text-align: center;
-       margin-bottom: 40px;
-     }
-     .fun ul li{
-        list-style: none;
-        width: 140px;
-        height: 140px;
-        background: rgba(0,0,0,0.5);
-        color: #fff;
-        text-align: center;
-        padding: 17px 20px 20px 20px;
-     }
-     .fun ul{
-        display: flex;
-        justify-content: space-between;
-     }
-     .fun ul li i{
-        font-size: 40px;
-    }
+.fun {
+    background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(14, 14, 14, 0.7)),
+        url(../img/banner2.jpg);
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    padding: 30px 160px;
+}
+
+.fun h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.fun ul li {
+    list-style: none;
+    width: 150px;
+    height: 170px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    margin: 10px 2px 0px 10px;
+    padding: 16px 0px 9px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    clip-path: polygon(0 0,
+            100% 0,
+            100% 80%,
+            50% 73%,
+            0 80%);
+
+}
+
+.fun ul {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* /Fun Section End */
- 
+
 /* News Letter Section Start */
-    .newsletter{
-        background: linear-gradient(rgba(56,43,87, 0.9),rgba(56,43,87, 0.7)),
-                  url(../img/flight.jpg);
-        height: 300px;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        position: relative;
-    }
-    .newsletter h2{ 
-        top: 40%;
-        left: 40%;
-        color: black;
-        font-size: 25px;
-        position: absolute;
-        color: #fff;
-        text-align: center;
-    }    
-    .newsletter p{
-        top: 55%;
-        left: 40%;
-        font: 100;
-        position: absolute;
-        color: #fff;
-        text-align: center;
-        }
-        .newsletter input{
-        top: 70%;
-        left: 40%;
-        position: absolute;
-        color: #fff;
-        background: none;
-        border: solid #fff 2px;
-        width: 500px;
-        height: 40px;
-        text-align: center;
-        }
-        .newsletter button{
-            position: absolute;
-            width: 100px;
-            height: 40px;
-            top: 70%;
-            left: 80%;
-        }
+.newsletter {
+    background: linear-gradient(rgba(56, 43, 87, 0.9), rgba(56, 43, 87, 0.7)),
+        url(../img/flight1.jpg);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.newsletter h2 {
+    top: 40%;
+    left: 40%;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter p {
+    top: 55%;
+    left: 40%;
+    font: 100;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter input {
+    top: 70%;
+    left: 40%;
+    position: absolute;
+    color: #fff;
+    background: none;
+    border: solid #fff 2px;
+    width: 500px;
+    height: 40px;
+    text-align: center;
+}
+
+.newsletter button {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 70%;
+    left: 80%;
+}
+
 /* News Letter Section End */
 
 /* Destination Section Start */
-   .destination{
+.destination {
     width: auto;
     height: auto;
     background: #1F172F;
     color: #fff;
     text-align: center;
     padding: 30px 0px;
-   }
-   .destination ul{
+}
+
+.destination ul {
     display: grid;
     grid-template-columns: 21% 21% 21% 21%;
     grid-template-rows: 300px 300px;
     grid-gap: 20px;
     margin-left: 11%;
     margin-top: 20px;
-   }
-   .destination ul li{
+}
+
+.destination ul li {
     list-style: none;
     border: 5px solid #fff;
     border-radius: 5px;
     background: #fff;
     text-align: center;
-   }
-    .destination ul li img{
-        height: 50%;
-        width: 100%;
-    }
-    .destination ul li h4 span{
-        color: #f43d3d;
-        text-align: center;
-    }
-    .destination ul li P{
-        color: #000000;
-        text-align: center;
-    }
-    .destination ul li h4 {
-        color: #000000;
-        text-align: center;
-    }
+}
+
+.destination ul li img {
+    height: 50%;
+    width: 100%;
+}
+
+.destination ul li h4 span {
+    color: #f43d3d;
+    text-align: center;
+}
+
+.destination ul li P {
+    color: #000000;
+    text-align: center;
+}
+
+.destination ul li h4 {
+    color: #000000;
+    text-align: center;
+}
+
 /* /Destination Section End */
- 
+
 /* Estimate Section Start */
-    .estimate{
-        width: 100%;
-        height: 250px;
-        background:#664CAD;
-        text-align: center;
-    }
+.estimate {
+    width: auto;
+    height: 200px;
+    padding: 30px 0px 0px 17%;
+    background: #664CAD;
+    position: relative;
+}
+
+.estimate img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.estimate label {
+    display: none;
+}
+
+.estimate form {
+    margin-top: 30px;
+}
+
+.estimate form select,
+input {
+    width: 160px;
+    height: 40px;
+    text-align: center;
+}
+
 /* /Estimate Section End */
+
+/* Blog Section Start  */
+
+.blog {
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+}
+
+.blog h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.blog p {
+    text-align: center;
+    padding: 0px 200px;
+}
+
+.blog-content {
+    margin: 10px;
+    display: flex;
+    padding: 0px 125px;
+}
+
+.blog-content hr {
+    margin-bottom: 15px;
+}
+
+.blog-content div {
+    display: flex;
+    padding: 10px;
+}
+
+.blog-content div img {
+    width: 120px;
+    height: 120px;
+}
+
+.blog-content div div {
+    display: inline-block;
+}
+
+/* /Blog Section End */
+
+/* Footer Section Start */
+footer {
+    background: linear-gradient(rgb(0, 0, 0, 0.90), rgb(0, 0, 0, 0.90)),
+                url(../img/departure.jpeg);
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+}
+
+.list {
+    display: flex;
+    color: #fff;
+    padding: 30px 100px;
+    justify-content: center;
+}
+
+footer .list ul {
+    list-style: none;
+    padding-right: 70px;
+}
+
+.list ul li {
+    padding: 3px;
+}
+
+footer .list ul li img {
+    width: 16px;
+}
+
+g {
+    color: #8b8889;
+}
+
+footer .social {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social img {
+    width: 55px;
+    height: 38px;
+    padding: 10px 0px 0px 10px;
+}
+
+footer .text {
+    padding-left: 0px;
+}
+
+footer .text ul li i {
+    color: #606162;
+    font-size: larger;
+}
+
+footer .social .done {
+    padding-left: 15px;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+}
+
+.social ul li {
+    padding-top: 9px;
+    padding-left: 14px;
+}
+
+/* /Footer Section End */
+
+/* Media Query Start */
+@media screen {
+    
+}
+/* Media Query End */

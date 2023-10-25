@@ -93,18 +93,18 @@
                     </select>
 
                     <div>
-                        <i class="fa-solid fa-plane-departure"></i>&nbsp;Trip Type:
+                        <i class="fa-solid fa-rotate icnsmall"></i>Trip Type:&nbsp;
                         <select>
                             <option value="Selected">Return Trip</option>
                             <option>First Trip</option>
-                        </select>&nbsp; &nbsp; 
+                        </select>&nbsp; &nbsp;
 
                         <i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;Ticket class:
                         <select>
                             <option value="Selected">Economy</option>
                             <option>First</option>
                             <option>Buisness</option>
-                        </select>&nbsp; &nbsp; 
+                        </select>&nbsp; &nbsp;
 
                         <input type="checkbox" name="checkbox">&nbsp; Direct Flight Only
                         <input type="checkbox" name="checkbox">&nbsp; Include Nearby Airport
@@ -125,18 +125,33 @@
             SOME FUN WE COVERED
         </h2>
         <ul>
-            <li><i class="fa-solid fa-person-biking" style="font-size: 40px; margin-bottom: 15px;"></i><br>5670
-                M<br>TRACK</li>
-            <li><i class="fa-solid fa-route" style="font-size: 40px; margin-bottom: 10px;"></i><br>480 M<br>DISTANCE
-                COVERED</li>
-            <li><i class="fa-solid fa-person-hiking" style="font-size: 40px; margin-bottom: 15px;"></i><br>5670
-                KM<br>ALTITUTE</li>
-            <li><i class="fa-solid fa-sailboat" style="font-size: 40px; margin-bottom: 10px;"></i><br>456 KM<br>SAILING
-                DISTANCE</li>
-            <li><i class="fa-solid fa-cloud-sun" style="font-size: 40px; margin-bottom: 10px;"></i><br>570 DAYS<br>SPEND
-                ADVENTURE</li>
-            <li><i class="fa-solid fa-dove" style="font-size: 40px; margin-bottom: 10px;"></i><br>567 M<br>JUGLE
-                DISTANCE</li>
+            <li>
+                <i class="fa-solid fa-person-biking" style="font-size: 40px; margin-bottom: 15px;"></i><br><b>5670 M</b>
+                <br>CYCLINK TRACK
+            </li>
+            <li>
+                <i class="fa-solid fa-route" style="font-size: 40px; margin-bottom: 10px;"></i><br><b>480
+                    M</b><br>DISTANCE
+                COVERED
+            </li>
+            <li>
+                <i class="fa-solid fa-person-hiking" style="font-size: 40px; margin-bottom: 15px;"></i><br><b>456 KM</b>
+                <br>ALTITUTE HIKED
+            </li>
+            <li>
+                <i class="fa-solid fa-sailboat" style="font-size: 40px; margin-bottom: 10px;"></i><br><b>678
+                    KM</b><br>SAILING
+                DISTANCE
+            </li>
+            <li>
+                <i class="fa-solid fa-cloud-sun" style="font-size: 40px; margin-bottom: 10px;"></i><br><b>570
+                    DAYS</b><br>SPEND
+                ADVENTURE
+            </li>
+            <li>
+                <i class="fa-solid fa-dove" style="font-size: 40px; margin-bottom: 10px;"></i><br><b>768 M</b><br>JUGLE
+                DISTANCE
+            </li>
         </ul>
     </section>
     <!-- /Fun Section End -->
@@ -226,16 +241,206 @@
     <!-- /Destinatopn Section End -->
 
     <!-- Estimate Section Start -->
-         <div class="estimate">
-            <h2>
-                GET A QUICK ESTIMATE! 
-             </h2>
-             <h3>
-                GET A PROFFESIONAL HELP 
-             </h3>
-             <img src="./assets/img/estimate.png" alt="estimate" width="100px" height="180px">
-         </div>
+    <section class="estimate">
+        <h3>
+            GET A QUICK ESTIMATE!
+        </h3>
+        <h4>
+            GET APROFFESIONAL HELP
+        </h4>
+        <p class="bottom" style="padding-bottom:5px;"></p>
+        <hr size="1px;" color="white" width="50px">
+
+        <form>
+            <label for="Purpose">Purpose</label>
+            <select name="Purpose" id="purpose">
+                <option value="Travel">Travel Purpose</option>
+                <option value="Business">Business</option>
+                <option value="Medical">Medical</option>
+                <option value="Sports">Sports</option>
+            </select>
+
+            <label for="TDate">TravelDate</label>
+            <input type="date" id="">
+
+            <label for="NumOfPeople">Number Of People</label>
+            <select name="NumOfPeople" id="NumOfPeople">
+                <option value="selected">Number of People</option>
+                <option value="4">1</option>
+                <option value="5">2</option>
+                <option value="4">3</option>
+                <option value="5">4</option>
+            </select>
+
+            <label for="Email">email</label>
+            <input type="email" id="travelerEmail" placeholder="Your Email">
+
+            <label for="Calculate">Calculate now</label>
+            <input type="submit" value="CALCULATE NOW" onclick="" style="background: #FE930D;font-weight: bolder;">
+
+        </form>
+        <img src="./assets/img/estimate.jpg" alt="">
+    </section>
     <!-- /Estimate Section End -->
+    <!-- Blog Section Start -->
+    <section class="blog">
+
+        <h2>LATEST BLOG</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, eum odio blanditiis harum quasi id debitis!
+            unde repudiandae minima aliquam provident. Corporis cupiditate dolor.</p>
+    </section>
+
+    <div class="blog-content">
+        <div>
+            <img src="./assets/img/blog1.jpg" alt="blog1">
+            <div>
+                <p>Feb 01,2023</p>
+                <h3>10 THINGS TODO BEFORE TRAVEL</h3>
+                <hr size="3px" width="36px" color="red">
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, magnam.
+                    Dignissimos quia fugiat aut deleniti, repellendus ut delectus.
+                </P>
+            </div>
+        </div>
+        <div>
+            <img src="./assets/img/blog2.jpg" alt="blog2">
+            <div>
+                <p>Jan 23,2016</p>
+                <h3>SAY NO TO LAZY LIFE</h3>
+                <hr size="3px" width="36px" color="black">
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, magnam.
+                    Dignissimos quia fugiat aut deleniti, repellendus ut delectus.
+                </P>
+
+            </div>
+        </div>
+    </div>
+    <div class="dots" style="text-align: center;font-size: 66px;color: gray;">
+        ...
+    </div>
+
+
+    <!-- /Blog Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+        <div class="list">
+            <ul>
+                <li style="font-size: 20px;">Top Cities</li><br>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> Unites states
+                </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> Unites Kingdom
+                </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> Spain
+                </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> Thailand
+                </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> India
+                </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> Italy
+                </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> Germany
+                </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> Denmark
+                </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> France
+                </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
+                    <g> Flights to</g> Austrelia
+                </li>
+            </ul>
+            <ul>
+                <li style="font-size: 20px;">Top Countries</li><br>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> London,<g> United Kingdom</g>
+                </li>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> New York,<g> United States</g>
+                </li>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> Bankok,<g> Thailand</g>
+                </li>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> Coperbingham,<g> Denmark</g>
+                </li>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> Orlanto,<g> United States</g>
+                </li>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> Paris,<g> France</g>
+                </li>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> Dubai,<g> United Arab Emirates</g>
+                </li>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> Singapore,<g> Singapore</g>
+                </li>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> Istambul,<g> Turkey</g>
+                </li>
+                <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
+                    <g> Flights to</g> Hong Kong,<g> Hong Kong</g>
+                </li>
+            </ul>
+            <ul>
+                <li style="font-size: 20px;">International Sites</li><br>
+                <li><img src="./assets/img/flag1.jpg"> &nbsp;I Love My India.</li>
+                <li><img src="./assets/img/flag2.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag3.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag4.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag5.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag6.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag7.jpg"> &nbsp;Lorem ipsum dolor</li>
+            </ul>
+            <ul><br><br><br>
+                <li><img src="./assets/img/flag8.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag9.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag10.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag11.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag12.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag13.jpg"> &nbsp;Lorem ipsum dolor</li>
+            </ul>
+        </div>
+        <div class="social">
+            <img src="./assets/img/momo.png">
+            <div class="text">
+                <ul>
+                    <li>About Us</li>
+                    <li>Jobs</li>
+                    <li>Press</li>
+                    <li>Affeliate</li>
+                    <li>Terms of use</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>Airlines</li>
+                    <li>Apps</li>
+                    <li>Help</li>
+                    <li style="margin-left: 120px;">
+                        <i class="fa-brands fa-twitter"></i>&nbsp;
+                        <i class="fa-brands fa-facebook"></i>&nbsp;
+                        <i class="fa-brands fa-google-plus"></i>&nbsp;
+                    </li>
+                </ul>
+                <div class="done">
+                    <g>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, deleniti
+                        minus consequuntur Designed - By Savita Pachpande.</g>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /Footer Section End -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="./assets/js/script.js"></script>
