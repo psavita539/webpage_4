@@ -113,9 +113,9 @@ header ul li {
 
 .banner form .box input,
 .banner form .box select {
-    width: 170px;
+    width: 160px;
     height: 30px;
-    margin: 15px 0px 0px 3px;
+    margin: 15px 0px 0px 5px; 
 }
 
 .banner form .sbtn {
@@ -153,6 +153,12 @@ header ul li {
     height: 12px;
     margin: 2px 3px 0px 5px;
     background: none;
+}
+.icon{
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    color: #721854;
 }
 
 /* /Banner Section End */
@@ -454,3 +460,83 @@ footer .social .done {
 
 /* /Footer Section End */
 
+/* Media Query Start */
+@media screen and (max-width:992px) {
+   html{
+    font-size: 15px;
+   }
+   .banner{
+    padding: 0px 60px;
+   }
+   .banner form {
+    width: 85%;
+   }
+   .fun{
+    padding: 20px 60px;
+   }
+   .newsletter button{
+    width: 110px;
+   }
+   .estimate{
+    padding: 10px 20px;
+   }
+   .estimate form select,input {
+     width: 140px;
+   }
+   .blog{
+    padding: 10px 0px;
+   }
+   .blog-content{
+    padding: 0px 20px;
+   }
+   .list{
+    padding: 15px 8px;
+   }
+   .list ul li{
+    padding: 0px;
+   }   
+}
+@media screen and (max-width:768px){
+    html{
+        font-size: 15px;
+       }
+       header{
+        padding: 10px 5px;
+       }
+       .banner{
+        padding: 10px 5px;
+       }
+       .banner form {
+        height: auto;
+        width: 97%;
+        display: inline;
+       }
+       .banner form .sbtn{
+        display: inline;
+       }
+       .fun{
+        padding: 10px 5px;
+       }
+       .newsletter button{
+        width: 110px;
+       }
+       .estimate{
+        padding: 10px 5px;
+       }
+       .estimate form select,input {
+         width: 140px;
+       }
+       .blog{
+        padding: 10px 5px;
+       }
+       .blog-content{
+        padding: 10px 5px;
+       }
+       .list{
+        padding: 15px 5px;
+       }
+       .list ul li{
+        padding: 0px;
+       }   
+}
+/* Media Query End */
