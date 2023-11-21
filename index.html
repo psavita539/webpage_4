@@ -42,6 +42,7 @@
             </li>
         </ul>
     </header>
+
     <!-- /header section end -->
 
     <!-- Banner section Start -->
@@ -67,27 +68,25 @@
                 <div class="box">
                     <label for="origin city">Origin City</label>
                     <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
-                    <input type="text" name="origin city" id="origin city" placeholder="Enter Origin City"
-                        style="margin-left: 12px;">
+                    <input type="text" name="origin city" id="origin city" placeholder="Enter Origin City">
 
-                    <i class="fa-solid fa-arrow-right-arrow-left" style="color: #1cb1ce; margin-left: 5px;"></i>
+                    <i class="fa-solid fa-arrow-right-arrow-left" id="arrow"
+                        style="color: #1cb1ce; margin-left: 5px;"></i>
 
                     <label for="Destination city">Destination City</label>
-                    <span class="icon" style="margin-left: 22%;"><i class="fa-solid fa-location-dot"></i></span>
+                    <span class="icon" style="margin-left: 21.2%;"><i class="fa-solid fa-location-dot"></i></span>
                     <input type="text" name="Destination city" id="Destination city"
                         placeholder="Enter Destination City">
 
                     <label for="Start Date">Start Date</label>
-                    <input type="date" name=" Travelling-Start-Date" id="Start Date" placeholder="Enter Start Date"
-                        style="width:100px;">
+                    <input type="date" name=" Travelling-Start-Date" id="Start Date" placeholder="Enter Start Date">
 
                     <label for="End Date">End Date</label>
-                    <input type="date" name="Travelling-End-Date" id="End Date" placeholder="Enter End Date"
-                        style="width:100px">
+                    <input type="date" name="Travelling-End-Date" id="End Date" placeholder="Enter End Date">
 
                     <label for="Select Passenger">Select Passenger</label>
-                    <span class="icon" style="margin-left: 67.7%;"><i class="fa-solid fa-user-group"></i></span>
-                    <select name="Select Passenger" id="Select Passenger" style="width: 145px; text-align: right;">
+                    <span class="icon" style="margin-left: 67%;"><i class="fa-solid fa-user-group"></i></span>
+                    <select name="Select Passenger" id="Select Passenger">
                         <option Selected>Select Passenger</option>
                         <option value="1-pass">Passenger 1</option>
                         <option value="2-pass">Passenger 2</option>
@@ -96,21 +95,21 @@
                     </select>
 
                     <div>
-                        <i class="fa-solid fa-rotate icnsmall"></i>Trip Type:&nbsp;
+                        <i class="fa-solid fa-rotate icnsmall" id="icon"></i>Trip Type:&nbsp;
                         <select>
                             <option value="Selected">Return Trip</option>
                             <option>First Trip</option>
                         </select>&nbsp; &nbsp;
 
-                        <i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;Ticket class:
+                        <i class="fa-solid fa-ticket" id="icon"></i>&nbsp;&nbsp;Ticket class:
                         <select>
                             <option value="Selected">Economy</option>
                             <option>First</option>
                             <option>Buisness</option>
-                        </select>&nbsp; &nbsp;
+                        </select>&nbsp;
 
-                        <input type="checkbox" name="checkbox">&nbsp; Direct Flight Only
-                        <input type="checkbox" name="checkbox">&nbsp; Include Nearby Airport
+                        <span><input type="checkbox" name="checkbox">Direct Flights only</span>
+                        <span><input type="checkbox" name="checkbox">Incliude nearly airports</span>
 
                     </div>
                 </div>
@@ -165,7 +164,7 @@
             SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS
         </h2>
         <p>
-            Join our comunnity of over 300000 globle readers who reveive email filled with news,<br>
+            Join our comunnity of over 300000 globle readers who reveive email filled with<br>
             promotion and other good staff from G Adventure.
         </P>
         <input type="text" name="Email" value="Enter your Email Address  .....">
@@ -331,7 +330,7 @@
     <footer>
         <div class="list">
             <ul>
-                <li style="font-size: 20px;">Top Cities</li><br>
+                <h3>Top Cities</h3><br>
                 <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i>
                     <g> Flights to</g> Unites states
                 </li>
@@ -364,7 +363,7 @@
                 </li>
             </ul>
             <ul>
-                <li style="font-size: 20px;">Top Countries</li><br>
+                <h3>Top Countries</h3><br>
                 <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i>
                     <g> Flights to</g> London,<g> United Kingdom</g>
                 </li>
@@ -396,48 +395,67 @@
                     <g> Flights to</g> Hong Kong,<g> Hong Kong</g>
                 </li>
             </ul>
-            <ul>
-                <li style="font-size: 20px;">International Sites</li><br>
+            <ul class="sites1">
+                <h3>International Sites</h3><br>
                 <li><img src="./assets/img/flag1.jpg"> &nbsp;I Love My India.</li>
-                <li><img src="./assets/img/flag2.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag2.jpg"> &nbsp;Lorem ipsum</li>
                 <li><img src="./assets/img/flag3.jpg"> &nbsp;Lorem ipsum</li>
-                <li><img src="./assets/img/flag4.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag4.jpg"> &nbsp;Lorem ipsum</li>
                 <li><img src="./assets/img/flag5.jpg"> &nbsp;Lorem ipsum</li>
-                <li><img src="./assets/img/flag6.jpg"> &nbsp;Lorem ipsum dolor</li>
-                <li><img src="./assets/img/flag7.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag6.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag7.jpg"> &nbsp;Lorem ipsum</li>
             </ul>
-            <ul><br><br><br>
-                <li><img src="./assets/img/flag8.jpg"> &nbsp;Lorem ipsum dolor</li>
+            <ul class="sites1"><br><br><br>
+                <li><img src="./assets/img/flag8.jpg"> &nbsp;Lorem ipsum</li>
                 <li><img src="./assets/img/flag9.jpg"> &nbsp;Lorem ipsum</li>
-                <li><img src="./assets/img/flag10.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag10.jpg"> &nbsp;Lorem ipsum</li>
                 <li><img src="./assets/img/flag11.jpg"> &nbsp;Lorem ipsum</li>
-                <li><img src="./assets/img/flag12.jpg"> &nbsp;Lorem ipsum dolor</li>
-                <li><img src="./assets/img/flag13.jpg"> &nbsp;Lorem ipsum dolor</li>
+                <li><img src="./assets/img/flag12.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag13.jpg"> &nbsp;Lorem ipsum</li>
+            </ul>
+            <ul class="sites">
+                <h3>International Sites</h3><br>
+                <li><img src="./assets/img/flag1.jpg"> &nbsp;I Love My India.</li>
+                <li><img src="./assets/img/flag2.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag3.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag4.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag5.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag6.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag7.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag8.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag9.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag10.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag11.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag12.jpg"> &nbsp;Lorem ipsum</li>
+                <li><img src="./assets/img/flag13.jpg"> &nbsp;Lorem ipsum</li>
             </ul>
         </div>
         <div class="social">
             <img src="./assets/img/momo.png">
             <div class="text">
                 <ul>
-                    <li>About Us</li>
-                    <li>Jobs</li>
-                    <li>Press</li>
-                    <li>Affeliate</li>
-                    <li>Terms of use</li>
-                    <li>Privacy Policy</li>
-                    <li>Cookies</li>
-                    <li>Airlines</li>
-                    <li>Apps</li>
-                    <li>Help</li>
-                    <li style="margin-left: 120px;">
+                    <li>About Us</li>&nbsp;&nbsp;
+                    <li>Jobs</li>&nbsp;&nbsp;
+                    <li>Press</li>&nbsp;&nbsp;
+                    <li>Affeliate</li>&nbsp;&nbsp;
+                    <li>Terms of use</li>&nbsp;&nbsp;
+                    <li>Privacy Policy</li>&nbsp;&nbsp;
+                    <li>Cookies</li>&nbsp;&nbsp;
+                    <li>Airlines</li>&nbsp;&nbsp;
+                    <li>Apps</li>&nbsp;&nbsp;
+                    <li>Help</li> &nbsp;&nbsp;
+                    <div class="social-icon">
                         <i class="fa-brands fa-twitter"></i>&nbsp;
                         <i class="fa-brands fa-facebook"></i>&nbsp;
                         <i class="fa-brands fa-google-plus"></i>&nbsp;
-                    </li>
+                    </div>
                 </ul>
                 <div class="done">
                     <g>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, deleniti
-                        minus consequuntur Designed - By Savita Pachpande.</g>
+                        minus consequuntur </g><br>
+                    <span style="color: #fff;font-size: large;">
+                        Designed:-By Savita Pachpande.
+                    </span>
                 </div>
             </div>
         </div>

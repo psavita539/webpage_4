@@ -56,9 +56,9 @@ header ul li {
 /* Banner Section Start */
 .banner {
     width: 100%;
-    height: 500px;
+    height: 535px;
     background: url(../img/momondo.jpg);
-    background-size: 100% 500px;
+    background-size: 100% 535px;
     position: relative;
     padding: 0px 160px;
 }
@@ -90,6 +90,12 @@ header ul li {
     width: 67%;
 }
 
+.banner .box div span input {
+    width: 12px;
+    height: 12px;
+    margin: 2px 3px 0px 5px;
+}
+
 .banner form .btn {
     background: #F12F4B;
     border: none;
@@ -99,7 +105,7 @@ header ul li {
 }
 
 .banner button {
-    background: #4A356F;
+    background: #1d0448;
     border: none;
     color: #fff;
     font-size: 10px;
@@ -115,7 +121,16 @@ header ul li {
 .banner form .box select {
     width: 160px;
     height: 30px;
-    margin: 15px 0px 0px 5px; 
+    margin: 15px 0px 0px 5px;
+}
+
+.banner form .box input[type="date"] {
+    width: 100px;
+}
+
+.banner form .box select {
+    width: 145px;
+    text-align: right;
 }
 
 .banner form .sbtn {
@@ -148,17 +163,11 @@ header ul li {
     background: #5b347a;
 }
 
-.banner .box div input {
-    width: 12px;
-    height: 12px;
-    margin: 2px 3px 0px 5px;
-    background: none;
-}
-.icon{
+.icon {
     position: absolute;
     top: 45px;
     left: 20px;
-    color: #721854;
+    color: #808080;
 }
 
 /* /Banner Section End */
@@ -196,7 +205,6 @@ header ul li {
             100% 80%,
             50% 73%,
             0 80%);
-
 }
 
 .fun ul {
@@ -311,7 +319,7 @@ header ul li {
 .estimate {
     width: auto;
     height: 200px;
-    padding: 30px 0px 0px 17%;
+    padding: 30px 0px 0px 200px;
     background: #664CAD;
     position: relative;
 }
@@ -355,7 +363,7 @@ input {
 }
 
 .blog p {
-    text-align: center;
+    text-align: justify;
     padding: 0px 200px;
 }
 
@@ -388,7 +396,7 @@ input {
 /* Footer Section Start */
 footer {
     background: linear-gradient(rgb(0, 0, 0, 0.90), rgb(0, 0, 0, 0.90)),
-                url(../img/departure.jpeg);
+        url(../img/departure.jpeg);
     font-size: 14px;
     width: 100%;
     height: auto;
@@ -400,6 +408,10 @@ footer {
     color: #fff;
     padding: 30px 100px;
     justify-content: center;
+}
+
+footer .sites {
+    display: none;
 }
 
 footer .list ul {
@@ -458,85 +470,484 @@ footer .social .done {
     padding-left: 14px;
 }
 
+.social-icon {
+    margin-left: 120px;
+}
+
 /* /Footer Section End */
 
 /* Media Query Start */
 @media screen and (max-width:992px) {
-   html{
-    font-size: 15px;
-   }
-   .banner{
-    padding: 0px 60px;
-   }
-   .banner form {
-    width: 85%;
-   }
-   .fun{
-    padding: 20px 60px;
-   }
-   .newsletter button{
-    width: 110px;
-   }
-   .estimate{
-    padding: 10px 20px;
-   }
-   .estimate form select,input {
-     width: 140px;
-   }
-   .blog{
-    padding: 10px 0px;
-   }
-   .blog-content{
-    padding: 0px 20px;
-   }
-   .list{
-    padding: 15px 8px;
-   }
-   .list ul li{
-    padding: 0px;
-   }   
-}
-@media screen and (max-width:768px){
-    html{
+    html {
         font-size: 15px;
-       }
-       header{
-        padding: 10px 5px;
-       }
-       .banner{
-        padding: 10px 5px;
-       }
-       .banner form {
+    }
+
+    .banner {
+        width: 100%;
+        padding: 0px 60px;
+    }
+
+    .banner {
+        background: linear-gradient(rgba(56, 43, 87, 0.7), rgba(10, 34, 43, 0.1)),
+            url(../img/sea.gif);
+        background-size: 100% 100%;
+    }
+
+    .banner h1 {
+        top: 20px;
+        font-size: 35px;
+        padding-left: 260px;
+        color: #fff;
+    }
+
+    .banner form {
+        width: 380px;
+        height: 65%;
+        display: flex;
+        padding: 5px 10px 10px 10px;
+        border-radius: 9px;
+        margin-left: 25%;
+    }
+
+    .banner form div .btn,
+    .banner button {
+        font-size: 15px;
+        padding: 0px 0px;
+        width: 28%;
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .banner form .box input,
+    .banner form .box input[type="date"],
+    .banner form .box select {
+        width: 350px;
+        height: 40px;
+        text-align: center;
+        margin: 2px;
+    }
+
+    .banner form .box #arrow,
+    .banner form .box .icon {
+        display: none;
+    }
+
+    .banner form .box div #icon {
+        display: none;
+    }
+
+    .banner form .box div {
+        display: contents;
+        color: #5aebeb;
+    }
+
+    .banner form .box div select {
+
+        font-size: 12px;
+        margin-top: 0px;
+        height: 15px;
+        width: 88px;
+        border: none;
+        color: #fff;
+    }
+
+    .banner form .box div span {
+        font-size: 14px;
+        margin-top: 0px;
+        padding-right: 12%;
+    }
+
+    .banner .box div select option {
+        background: #000000;
+    }
+
+    .banner form .sbtn {
+        width: 280px;
+        height: 40px;
+        border-radius: 10px;
+        margin: 295px 0px 0px -310px;
+    }
+
+    .banner form .sbtn:hover {
+        background-color: #fff;
+        color: #000000;
+    }
+
+    .fun {
+        width: 100%;
+        background-size: 100% 100%;
         height: auto;
-        width: 97%;
+        padding: 30px 150px;
+    }
+
+    .fun ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 6px;
+    }
+
+    .newsletter h2 {
+        top: 30px;
+        left: 65px;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .newsletter input {
+        width: 300px;
+        top: 35%;
+        left: 120px;
+    }
+
+    .newsletter button {
+        width: 300px;
+        top: 55%;
+        left: 120px;
+        background: #1d0448;
+        font-size: 16px;
+        color: #fff;
+        border-style: outset;
+    }
+
+    .newsletter p {
+        top: 100px;
+        padding: 5px 40px 10px 90px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        width: 350px;
+        text-align: justify;
+    }
+
+    .estimate {
+        width: auto;
+        height: auto;
+        padding-top: 5px;
+    }
+
+    .estimate form {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+
+    }
+
+    .estimate form select,
+    input {
+        width: 400px;
+        height: 40px;
+    }
+
+    .blog {
+        padding: 30px 20px 20px 0px;
+    }
+
+    .blog p {
+        text-align: justify;
+    }
+
+    .blog-content {
         display: inline;
-       }
-       .banner form .sbtn{
-        display: inline;
-       }
-       .fun{
-        padding: 10px 5px;
-       }
-       .newsletter button{
-        width: 110px;
-       }
-       .estimate{
-        padding: 10px 5px;
-       }
-       .estimate form select,input {
-         width: 140px;
-       }
-       .blog{
-        padding: 10px 5px;
-       }
-       .blog-content{
-        padding: 10px 5px;
-       }
-       .list{
-        padding: 15px 5px;
-       }
-       .list ul li{
-        padding: 0px;
-       }   
+    }
+
+    .blog-content div {
+        padding: 0px 50px 10px 100px;
+    }
+
+    .blog-content div img {
+        width: 130px;
+        height: 130px;
+    }
+
+    footer .social ul li,
+    footer .social-icon,
+    footer .done {
+        font-size: small;
+    }
+
+    .list {
+        padding: 30px 17px;
+    }
+
 }
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 0px 10px;
+    }
+
+    .banner {
+        width: 100%;
+        padding: 0px 60px;
+    }
+
+    .banner h1 {
+        top: 20px;
+        font-size: 35px;
+        padding-left: 180px;
+    }
+
+    .banner form {
+        width: 380px;
+        height: 65%;
+        display: flex;
+        padding: 5px 10px 10px 10px;
+        border-radius: 9px;
+        margin-left: 18%;
+    }
+
+    .fun {
+        padding: 30px 130px;
+    }
+
+    .newsletter h2 {
+        top: 30px;
+        left: 65px;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .newsletter input {
+        width: 300px;
+        top: 35%;
+        left: 120px;
+    }
+
+    .newsletter button {
+        width: 300px;
+        top: 55%;
+        left: 120px;
+        background: #1d0448;
+        font-size: 16px;
+        color: #fff;
+        border-style: groove;
+    }
+
+    .newsletter p {
+        top: 100px;
+        padding: 5px 10px 0px 150px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        width: 350px;
+        text-align: justify;
+    }
+
+    .destination ul {
+        display: grid;
+        grid-template-columns: 37% 37%;
+        grid-gap: 35px;
+    }
+
+    .destination {
+        padding: 30px 0px 30px 60px;
+    }
+
+    .estimate {
+        width: auto;
+        height: auto;
+        padding: 7px 0px 0px 140px;
+    }
+
+    footer {
+        padding: 20px 170px;
+        font-size: medium;
+    }
+
+    footer h3 {
+        padding-top: 15px;
+    }
+
+    footer .list,
+    footer .sites {
+        display: block;
+    }
+
+    footer .sites1 {
+        display: none;
+    }
+
+    footer .social ul li,
+    footer .social-icon,
+    footer .done {
+        display: contents;
+        text-wrap: nowrap;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 2px 5px;
+        font-size: 15px;
+        height: 100px;
+    }
+
+    header ul li {
+        margin: 3px;
+    }
+
+    .banner {
+        padding: 0px 0px;
+    }
+
+    .banner h1 {
+        padding-left: 28px;
+        font-size: 30px;
+    }
+
+    .banner form {
+        width: 280px;
+        height: 73%;
+        margin-left: 5%;
+    }
+
+    .banner form .box input,
+    .banner form .box input[type="date"],
+    .banner form .box select {
+        width: 250px;
+    }
+
+    .banner form div .btn,
+    .banner button {
+        width: 25%;
+        margin-right: 3px;
+    }
+
+    .banner form .sbtn {
+        width: 250px;
+        margin: 260px 0px 0px -255px;
+        margin-top: 340px;
+    }
+
+    .banner form .box div span {
+        display: block;
+    }
+
+    .banner form .box div {
+        margin-top: 40px;
+    }
+
+    .fun {
+        padding: 30px 15px;
+    }
+
+    .fun ul {
+
+        grid-template-columns: auto auto;
+        gap: 3px;
+    }
+
+    .fun ul li {
+        width: 130px;
+        height: 170px;
+    }
+
+    .newsletter h2 {
+        left: 10px;
+        padding: 0px;
+    }
+
+    .newsletter input {
+        width: 200px;
+        font-size: 14px;
+        left: 65px;
+        top: 65%;
+    }
+
+    .newsletter button {
+        width: 200px;
+        left: 65px;
+        top: 82%;
+    }
+
+    .newsletter p {
+        padding: 0px 6px 0px 6px;
+        font-size: 13px;
+        text-align: center;
+        width: 280px;
+        left: 28px;
+    }
+
+    .destination ul {
+        grid-template-columns: 100%;
+    }
+
+    .destination {
+        padding: 30px 33px 30px 0px;
+    }
+
+    .destination h2 {
+        padding-left: 16px;
+    }
+
+    .estimate {
+        padding: 7px 0px 0px 33px;
+    }
+
+    .estimate form select,
+    input {
+        width: 250px;
+    }
+
+    .estimate img {
+        display: none;
+    }
+
+    .blog p {
+        padding: 5px 30px;
+        font-size: 18px;
+    }
+
+    .blog-content div {
+        padding: 0px 15px 10px 20px;
+        font-size: 20px;
+    }
+
+    .blog-content div img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .blog-content div {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        padding: 5px 0px 5px 20px;
+        font-size: smaller;
+    }
+
+    footer .social .text {
+        padding: 0px 0px 0px 160px;
+    }
+
+    footer .social-icon {
+        display: flex;
+        padding: 0px 0px 0px 230px;
+    }
+
+    footer .social .done {
+        font-size: xx-small;
+    }
+
+    footer .social .done g {
+        display: none;
+
+    }
+
+    footer .done span {
+        font-size: large;
+        background: #6e5586;
+        padding: 0px 0px;
+        font-family: cursive;
+    }
+}
+
 /* Media Query End */
