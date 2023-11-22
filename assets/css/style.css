@@ -803,27 +803,28 @@ footer .social .done {
     }
 
     .banner form {
-        width: 280px;
-        height: 73%;
+        width: 300px;
+        height: 70%;
         margin-left: 5%;
     }
 
     .banner form .box input,
     .banner form .box input[type="date"],
     .banner form .box select {
-        width: 250px;
+        width: 275px;
+        height: 35px;
     }
 
     .banner form div .btn,
     .banner button {
-        width: 25%;
-        margin-right: 3px;
+        width: 28%;
+        margin-right: 5px;
     }
 
     .banner form .sbtn {
         width: 250px;
-        margin: 260px 0px 0px -255px;
-        margin-top: 340px;
+        margin: 260px 0px 0px -263px;
+        margin-top: 320px;
     }
 
     .banner form .box div span {
@@ -869,7 +870,7 @@ footer .social .done {
 
     .newsletter p {
         padding: 0px 6px 0px 6px;
-        font-size: 13px;
+        font-size: 12px;
         text-align: center;
         width: 280px;
         left: 28px;
@@ -947,6 +948,7 @@ footer .social .done {
         background: #6e5586;
         padding: 0px 0px;
         font-family: cursive;
+        color: #ee7f7d;
     }
 }
 
